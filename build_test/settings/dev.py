@@ -10,7 +10,8 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
-BASE_URL = 'http://localhost:8019'
+BASE_URL = 'http://localhost:8000'
+WAGTAILADMIN_BASE_URL = BASE_URL + '/admin'
 
 # Django base settings.
 # https://docs.djangoproject.com/en/2.2/ref/settings/
@@ -123,8 +124,9 @@ TEMPLATES = [
 
 WAGTAIL_SITE_NAME = 'Wagtail Advanced Form Builder Test'
 
+
 try:
     from .local import *
 except ImportError:
+    print('Local settings not configured')
     pass
-

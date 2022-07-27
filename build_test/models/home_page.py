@@ -6,4 +6,3 @@ class HomePage(Page):
         'wagtail_advanced_form_builder.EmailFormPage',
         'wagtail_advanced_form_builder.FormPage',
     ]
-

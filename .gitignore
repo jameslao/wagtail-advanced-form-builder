@@ -9,3 +9,5 @@ wagtail_advanced_form_builder.egg-info
 *console.log
 build_test/settings/local/*
 .vagrant
+*.sqlite3
+*/migrations/*

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import io
 
 from setuptools import setup, find_packages
@@ -19,9 +19,9 @@ setup(
     version="0.2.3",
     description="Wagtail Advanced Form Builder",
     long_description=long_description,
-    author="Richard Blake (Octave)",
-    author_email="richard.blake@octave.nz",
-    url="https://github.com/octavenz/wagtail-advanced-form-builder",
+    author="Richard Blake (Octave), James Lao",
+    author_email="james.lao@gmail.com",
+    url="https://github.com/jameslao/wagtail-advanced-form-builder",
     packages=find_packages(exclude=("build_test",)),
     include_package_data=True,
     license="BSD",
@@ -35,6 +35,8 @@ setup(
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
     ],
     install_requires=["Django>=2.2", "Wagtail>=2.7", "wagtailextraicons"],
     zip_safe=False,
